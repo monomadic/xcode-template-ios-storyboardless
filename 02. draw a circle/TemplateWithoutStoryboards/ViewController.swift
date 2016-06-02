@@ -16,9 +16,10 @@ class ViewController: UIViewController {
         
         let windowWidth = view.frame.width
         let windowHeight = view.frame.height
+        let padding : CGFloat = 10
         
         // create a UIView and draw a circle on it as big as the current screen.
-        let circleView = CircleView(frame: CGRectMake(10, 10, windowWidth - 10, windowHeight - 10))
+        let circleView = CircleView(frame: CGRectMake(padding, padding, windowWidth - padding, windowHeight - padding))
         
         // add the subview we just drew to the current view
         view.addSubview(circleView)
